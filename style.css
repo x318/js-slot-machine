@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(#272727, #141414);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo-cont {
+  margin: 15px;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  height: 100vh;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.rolls-cont {
+  width: 500px;
+  height: 300px;
+  margin: 20px auto;
+  background: linear-gradient(45deg, #f6e6b4 0%, #ed9017 100%);
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rolls-inner {
+  width: 490px;
+  height: 290px;
+  background: linear-gradient(#272727, #141414);
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rolls {
+  width: 480px;
+  height: 280px;
+  background: #272727;
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+}
+
+.rolls > div {
+  height: 100%;
+  width: 32.5%;
+  background: linear-gradient(to bottom, #eabb81 0%, #eabb81 2%, #f4eed9 50%, #eabb81 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rolls p {
+  text-align: center;
+  font-size: 60px;
+  animation: slide-up 0.4s ease;
+
+  padding: 15px;
+  margin: 15px;
+  background: linear-gradient(#3a3a3a, #141414);
+  color: white;
+}
+
+.info-cont {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.info-inner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+  background: #eabb81;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.info-inner > label {
+  padding: 5px;
+}
+
+.info-inner > input {
+  text-align: center;
+  padding: 2px 5px;
+}
+
+.info-inner > input:focus {
+  outline: none;
+}
+
+.buttons-cont {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.buttons-cont__ng {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.buttons-cont > button,
+.buttons-cont__ng > button,
+a {
+  padding: 5px 10px;
+  margin: 0 40px;
+  width: 60px;
+  height: 40px;
+  color: white;
+  background: #eabb81;
+  border-radius: 5px;
+}
+
+.buttons-cont__ng > a {
+  text-align: center;
+  text-decoration: none;
+  width: 30%;
+  font-weight: bolder;
+  font-size: 30px;
+  padding: 15px;
+  height: auto;
+  margin: 40px;
+}
+
+.buttons-cont > button:disabled,
+.buttons-cont__ng > button:disabled {
+  background: #e2cfb8;
+}
+
+.buttons-cont > button:hover,
+.buttons-cont__ng > button:hover {
+  filter: brightness(120%);
+}
+
+.buttons-cont__ng > div {
+  padding: 5px 10px;
+  margin: 10px 40px;
+  width: 60px;
+  height: 40px;
+  color: white;
+  background: #eabb81;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+/* ANIMATIONS */
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(120px);
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0px);
+  }
+}

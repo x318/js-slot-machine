@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slot machine</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer type="module" src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-cont">
+        <h1>SLOT MACHINE</h1>
+        <h3>Cash:</h3>
+        <h3 id="balance"></h3>
+      </div>
+      <div class="rolls-cont">
+        <div class="rolls-inner">
+          <div class="rolls">
+            <div id="roll"></div>
+            <div id="roll"></div>
+            <div id="roll"></div>
+          </div>
+        </div>
+      </div>
+      <div class="info-cont">
+        <div class="info-inner">
+          <label for="bet">Your bet</label>
+          <input id="bet" />
+        </div>
+        <div class="info-inner">
+          <label for="win">Win</label>
+          <input id="win" readonly />
+        </div>
+      </div>
+      <div class="buttons-cont">
+        <button id="plus">+</button>
+        <button id="minus">-</button>
+        <button id="spin">Spin</button>
+      </div>
+    </div>
+  </body>
+</html>
